@@ -1,0 +1,13 @@
+C:\iar\ewarm-9.70.2\arm\bin\armproc.dll
+
+ C:\iar\ewarm-9.70.2\arm\bin\armjlink.dll
+
+ C:\Users\mandy\aducm355-examples\examples\ApplicationExamples\M355_DPV\iar\Debug\Exe\M355_AirQual.out
+
+ --plugin=C:\iar\ewarm-9.70.2\arm\bin\armLibSupportUniversal.dll
+
+ --flash_loader=C:\iar\ewarm-9.70.2\arm/config/flashloader/AnalogDevices/FlashADUCM355.board
+
+ 
+
+
