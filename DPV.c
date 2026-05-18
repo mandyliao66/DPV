@@ -65,9 +65,11 @@ static void UpdateDACCodes(void)
   if(baseCode  > 4095) baseCode  = 4095;
   if(pulseCode < 0)    pulseCode = 0;
   if(pulseCode > 4095) pulseCode = 4095;
+  
+  //ref_afe_lpdacdat0 layout: bits [11:0] 12 bit vbias dac code; [17:12] 6 bit vzero dac code
 
-  CurrBaseCode = (uint32_t)baseCode;
-  PulseCode    = (uint32_t)pulseCode;
+  CurrBaseCode = (CurrVzeroCode <<12) | (uint32_t)baseCode;
+  PulseCode    = (CurrVzeroCode << 12) | (uint32_t)pulseCode;
 }
 
 AD5940Err AppSWVGetCfg(void *pCfg)
@@ -94,6 +96,9 @@ AD5940Err AppSWVCtrl(uint32_t Command, void *pPara)
         return AD5940ERR_APPERROR;
       if(AppSWVCfg.RampState == DPV_STOP)
         return AD5940ERR_APPERROR;
+
+      // confirm values
+    printf("WUPT cfg: SampleDelay=%.1f QuietTime=%.1f PulseWidth=%.1f LFOSC=%.0f\r\n", AppSWVCfg.SampleDelay, AppSWVCfg.QuietTime_ms, AppSWVCfg.PulseWidth_ms, AppSWVCfg.LFOSCClkFreq);
 
       /* DPV cycle per step:
          SEQ0 (base DAC) -> quiet -> SEQ2 (ADC sample base)
@@ -578,7 +583,7 @@ static int32_t AppSWVDataProcess(int32_t * const pData, uint32_t *pDataCount)
   uint32_t datacount = *pDataCount;
   float *pOut = (float *)pData;
 
-  /* ADC code -> current (uA) */
+  // ADC code -> current (uA) 
   for(i = 0; i < datacount; i++)
   {
     float volt = AD5940_ADCCode2Volt(
@@ -588,7 +593,7 @@ static int32_t AppSWVDataProcess(int32_t * const pData, uint32_t *pDataCount)
     pOut[i] = -volt / AppSWVCfg.RtiaValue.Magnitude * 1e3f;
   }
 
-  /* DPV subtraction: pulse - base, pairs are (base, pulse).
+ /*  DPV subtraction: pulse - base, pairs are (base, pulse).
      Only process complete pairs. Forward traversal is safe because
      we read indices 2i, 2i+1 and write index i (i <= 2i always). */
   uint32_t pairs = datacount / 2;
@@ -600,6 +605,27 @@ static int32_t AppSWVDataProcess(int32_t * const pData, uint32_t *pDataCount)
   *pDataCount = pairs;
   return 0;
 }
+
+/*
+static int32_t AppSWVDataProcess(int32_t * const pData, uint32_t *pDataCount)
+{
+  uint32_t i;
+  uint32_t datacount = *pDataCount;
+  float *pOut = (float *)pData;
+
+  for(i = 0; i < datacount; i++)
+  {
+    float volt = AD5940_ADCCode2Volt(
+        pData[i] & 0xffff,
+        AppSWVCfg.AdcPgaGain,
+        AppSWVCfg.ADCRefVolt);
+    pOut[i] = -volt / AppSWVCfg.RtiaValue.Magnitude * 1e3f;
+  }
+
+  // SUBTRACTION DISABLED FOR DEBUG 
+  return 0;
+}
+*/
 
 AD5940Err AppSWVISR(void *pBuff, uint32_t *pCount)
 {

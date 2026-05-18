@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
 <settings>
     <PlDriver>
-        <FirstRun>0</FirstRun>
         <MemConfigValue>C:\iar\ewarm-9.70.2\arm\config\debugger\AnalogDevices\ADuCM355.ddf</MemConfigValue>
+        <FirstRun>0</FirstRun>
     </PlDriver>
     <DebugChecksum>
-        <Checksum>1121084671</Checksum>
+        <Checksum>3930508284</Checksum>
     </DebugChecksum>
     <Exceptions>
-        <StopOnUncaught>_ 0</StopOnUncaught>
         <StopOnThrow>_ 0</StopOnThrow>
+        <StopOnUncaught>_ 0</StopOnUncaught>
     </Exceptions>
     <Disassembly>
         <MixedMode>1</MixedMode>

@@ -28,6 +28,7 @@ int main(void)
 
   AD5940_MCUResourceInit(0);    /* Inialize all peripherals etc. used for AD5940/AFE. */
   AD5940_Main();
+   
   
 }
 

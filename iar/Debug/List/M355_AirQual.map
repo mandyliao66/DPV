@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR ELF Linker V9.70.2.500/W64 for ARM                  11/May/2026  12:46:33
+# IAR ELF Linker V9.70.2.500/W64 for ARM                  17/May/2026  15:34:27
 # Copyright 2007-2025 IAR Systems AB.
 #
 #    Output file  =
@@ -107,7 +107,7 @@ No sections matched the following patterns:
     CHECKSUM              uninit         0x7fc                0x4  <Block tail>
                                        - 0x800                0x4
 
-"P2":                                                      0x576c
+"P2":                                                      0x5806
   .text                   ro code        0x800          4  0x1f78  ad5940.o [2]
   .text                   ro code       0x2778          4    0x76  ABImemcpy_unaligned.o [6]
   .text                   ro code       0x27ee          2    0x3a  packbits_init_single.o [6]
@@ -161,102 +161,103 @@ No sections matched the following patterns:
   .text                   ro code       0x4b18          4     0x2  I64DivZer.o [6]
   .text                   ro code       0x4b1a          2     0x2  startup_ADuCM355.o [3]
   .text                   ro code       0x4b1c          4    0x14  exit.o [7]
-  .text                   ro code       0x4b30          4   0xa78  DPV.o [1]
-  .text                   ro code       0x55a8          4    0x26  FltToS32.o [5]
-  .text                   ro code       0x55ce          2     0x2  startup_ADuCM355.o [3]
-  .text                   ro code       0x55d0          4   0x238  AD5940Main.o [1]
-  .text                   ro code       0x5808          4    0x28  printf.o [4]
-  .text                   ro code       0x5830          4   0x12e  UrtLib.o [2]
-  .text                   ro code       0x595e          2     0x2  startup_ADuCM355.o [3]
-  .text                   ro code       0x5960          4   0x118  ClkLib.o [2]
-  .text                   ro code       0x5a78          4    0x78  main.o [1]
-  .rodata                 const         0x5af0          4    0x70  ad5940.o [2]
-  .rodata                 const         0x5b60          4    0x6c  ad5940.o [2]
-  .text                   ro code       0x5bcc          4    0x62  system_ADuCM355.o [3]
-  .text                   ro code       0x5c2e          2     0x2  startup_ADuCM355.o [3]
-  .text                   ro code       0x5c30          4    0x60  startup_ADuCM355.o [3]
-  .text                   ro code       0x5c90          4    0x22  cmain.o [6]
-  .text                   ro code       0x5cb2          2     0x4  low_level_init.o [4]
-  .text                   ro code       0x5cb6          2     0x2  startup_ADuCM355.o [3]
-  .text                   ro code       0x5cb8          4    0x28  data_init.o [6]
-  .text                   ro code       0x5ce0          2     0x4  exit.o [4]
-  .text                   ro code       0x5ce4          4     0x4  cexit.o [6]
-  .text                   ro code       0x5ce8          4     0xa  cexit_2.o [6]
-  .rodata                 const         0x5cf4          4    0x34  ad5940.o [2]
-  .rodata                 const         0x5d28          8    0x40  iar_Atan64.o [5]
-  .text                   ro code       0x5d68          2    0x38  zero_init3.o [6]
-  .iar.init_table         const         0x5da0          4    0x20  - Linker created -
-  .text                   ro code       0x5dc0          4    0x20  retarget.o [3]
-  .text                   ro code       0x5de0          4    0x1e  cstartup_M.o [6]
-  .text                   ro code       0x5dfe          2    0x16  xprout.o [4]
-  .rodata                 const         0x5e14          4    0x14  ad5940.o [2]
-  .rodata                 const         0x5e28          4    0x10  ad5940.o [2]
-  .rodata                 const         0x5e38          4    0x10  ad5940.o [2]
-  .rodata                 const         0x5e48          4    0x10  AD5940Main.o [1]
-  .rodata                 const         0x5e58          4    0x10  AD5940Main.o [1]
-  .rodata                 const         0x5e68          4     0x8  ad5940.o [2]
-  .rodata                 const         0x5e70          4     0x8  ad5940.o [2]
-  .rodata                 const         0x5e78          4     0x8  ad5940.o [2]
-  .rodata                 const         0x5e80          4     0x8  ad5940.o [2]
-  .rodata                 const         0x5e88          4     0x8  ad5940.o [2]
-  .rodata                 const         0x5e90          4     0x8  ad5940.o [2]
-  .rodata                 const         0x5e98          4     0x8  ad5940.o [2]
-  .rodata                 const         0x5ea0          4     0x8  main.o [1]
-  .rodata                 const         0x5ea8          4     0x4  ad5940.o [2]
-  .rodata                 const         0x5eac          4     0x4  ad5940.o [2]
-  .rodata                 const         0x5eb0          4     0x4  ad5940.o [2]
-  .rodata                 const         0x5eb4          4     0x4  ad5940.o [2]
-  .text                   ro code       0x5eb8          2     0x2  startup_ADuCM355.o [3]
-  .text                   ro code       0x5eba          2     0x2  startup_ADuCM355.o [3]
-  .text                   ro code       0x5ebc          2     0x2  startup_ADuCM355.o [3]
-  .text                   ro code       0x5ebe          2     0x2  startup_ADuCM355.o [3]
-  .text                   ro code       0x5ec0          2     0x2  startup_ADuCM355.o [3]
-  .text                   ro code       0x5ec2          2     0x2  startup_ADuCM355.o [3]
-  .text                   ro code       0x5ec4          2     0x2  startup_ADuCM355.o [3]
-  .text                   ro code       0x5ec6          2     0x2  startup_ADuCM355.o [3]
-  .text                   ro code       0x5ec8          2     0x2  startup_ADuCM355.o [3]
-  .text                   ro code       0x5eca          2     0x2  startup_ADuCM355.o [3]
-  .text                   ro code       0x5ecc          2     0x2  startup_ADuCM355.o [3]
-  .text                   ro code       0x5ece          2     0x2  startup_ADuCM355.o [3]
-  .text                   ro code       0x5ed0          2     0x2  startup_ADuCM355.o [3]
-  .text                   ro code       0x5ed2          2     0x2  startup_ADuCM355.o [3]
-  .text                   ro code       0x5ed4          2     0x2  startup_ADuCM355.o [3]
-  .text                   ro code       0x5ed6          2     0x2  startup_ADuCM355.o [3]
-  .text                   ro code       0x5ed8          2     0x2  startup_ADuCM355.o [3]
-  .text                   ro code       0x5eda          2     0x2  startup_ADuCM355.o [3]
-  .text                   ro code       0x5edc          2     0x2  startup_ADuCM355.o [3]
-  .text                   ro code       0x5ede          2     0x2  startup_ADuCM355.o [3]
-  .text                   ro code       0x5ee0          2     0x2  startup_ADuCM355.o [3]
-  .text                   ro code       0x5ee2          2     0x2  startup_ADuCM355.o [3]
-  .text                   ro code       0x5ee4          2     0x2  startup_ADuCM355.o [3]
-  .text                   ro code       0x5ee6          2     0x2  startup_ADuCM355.o [3]
-  .text                   ro code       0x5ee8          2     0x2  startup_ADuCM355.o [3]
-  .text                   ro code       0x5eea          2     0x2  startup_ADuCM355.o [3]
-  .text                   ro code       0x5eec          2     0x2  startup_ADuCM355.o [3]
-  .text                   ro code       0x5eee          2     0x2  startup_ADuCM355.o [3]
-  .text                   ro code       0x5ef0          2     0x2  startup_ADuCM355.o [3]
-  .text                   ro code       0x5ef2          2     0x2  startup_ADuCM355.o [3]
-  .text                   ro code       0x5ef4          2     0x2  startup_ADuCM355.o [3]
-  .text                   ro code       0x5ef6          2     0x2  startup_ADuCM355.o [3]
-  .text                   ro code       0x5ef8          2     0x2  startup_ADuCM355.o [3]
-  .text                   ro code       0x5efa          2     0x2  startup_ADuCM355.o [3]
-  .text                   ro code       0x5efc          2     0x2  startup_ADuCM355.o [3]
-  .text                   ro code       0x5efe          2     0x2  startup_ADuCM355.o [3]
-  .text                   ro code       0x5f00          2     0x2  startup_ADuCM355.o [3]
-  .text                   ro code       0x5f02          2     0x2  startup_ADuCM355.o [3]
-  .text                   ro code       0x5f04          2     0x2  startup_ADuCM355.o [3]
-  .text                   ro code       0x5f06          2     0x2  startup_ADuCM355.o [3]
-  .text                   ro code       0x5f08          2     0x2  startup_ADuCM355.o [3]
-  .text                   ro code       0x5f0a          2     0x2  startup_ADuCM355.o [3]
-  .text                   ro code       0x5f0c          2     0x2  startup_ADuCM355.o [3]
-  .text                   ro code       0x5f0e          2     0x2  startup_ADuCM355.o [3]
-  .text                   ro code       0x5f10          2     0x2  startup_ADuCM355.o [3]
-  .text                   ro code       0x5f12          2     0x2  startup_ADuCM355.o [3]
-  .text                   ro code       0x5f14          2     0x2  startup_ADuCM355.o [3]
-  .rodata                 const         0x5f16                0x0  zero_init3.o [6]
-  .rodata                 const         0x5f16                0x0  packbits_init_single.o [6]
-  Initializer bytes       const         0x5f16               0x56  <for P3-1>
-                                      - 0x5f6c             0x576c
+  .text                   ro code       0x4b30          4   0xabc  DPV.o [1]
+  .text                   ro code       0x55ec          4    0x26  FltToS32.o [5]
+  .text                   ro code       0x5612          2     0x2  startup_ADuCM355.o [3]
+  .text                   ro code       0x5614          4    0x28  printf.o [4]
+  .text                   ro code       0x563c          4   0x248  AD5940Main.o [1]
+  .text                   ro code       0x5884          4   0x12e  UrtLib.o [2]
+  .text                   ro code       0x59b2          2     0x2  startup_ADuCM355.o [3]
+  .text                   ro code       0x59b4          4   0x118  ClkLib.o [2]
+  .text                   ro code       0x5acc          4    0x78  main.o [1]
+  .rodata                 const         0x5b44          4    0x70  ad5940.o [2]
+  .rodata                 const         0x5bb4          4    0x6c  ad5940.o [2]
+  .text                   ro code       0x5c20          4    0x62  system_ADuCM355.o [3]
+  .text                   ro code       0x5c82          2     0x2  startup_ADuCM355.o [3]
+  .text                   ro code       0x5c84          4    0x60  startup_ADuCM355.o [3]
+  .text                   ro code       0x5ce4          4    0x22  cmain.o [6]
+  .text                   ro code       0x5d06          2     0x4  low_level_init.o [4]
+  .text                   ro code       0x5d0a          2     0x2  startup_ADuCM355.o [3]
+  .text                   ro code       0x5d0c          4    0x28  data_init.o [6]
+  .text                   ro code       0x5d34          2     0x4  exit.o [4]
+  .text                   ro code       0x5d38          4     0x4  cexit.o [6]
+  .text                   ro code       0x5d3c          4     0xa  cexit_2.o [6]
+  .text                   ro code       0x5d46          2     0x2  startup_ADuCM355.o [3]
+  .rodata                 const         0x5d48          4    0x48  DPV.o [1]
+  .rodata                 const         0x5d90          8    0x40  iar_Atan64.o [5]
+  .text                   ro code       0x5dd0          2    0x38  zero_init3.o [6]
+  .rodata                 const         0x5e08          4    0x34  ad5940.o [2]
+  .iar.init_table         const         0x5e3c          4    0x20  - Linker created -
+  .text                   ro code       0x5e5c          4    0x20  retarget.o [3]
+  .text                   ro code       0x5e7c          4    0x1e  cstartup_M.o [6]
+  .text                   ro code       0x5e9a          2    0x16  xprout.o [4]
+  .rodata                 const         0x5eb0          4    0x14  ad5940.o [2]
+  .rodata                 const         0x5ec4          4    0x10  ad5940.o [2]
+  .rodata                 const         0x5ed4          4    0x10  ad5940.o [2]
+  .rodata                 const         0x5ee4          4    0x10  AD5940Main.o [1]
+  .rodata                 const         0x5ef4          4    0x10  AD5940Main.o [1]
+  .rodata                 const         0x5f04          4     0x8  ad5940.o [2]
+  .rodata                 const         0x5f0c          4     0x8  ad5940.o [2]
+  .rodata                 const         0x5f14          4     0x8  ad5940.o [2]
+  .rodata                 const         0x5f1c          4     0x8  ad5940.o [2]
+  .rodata                 const         0x5f24          4     0x8  ad5940.o [2]
+  .rodata                 const         0x5f2c          4     0x8  ad5940.o [2]
+  .rodata                 const         0x5f34          4     0x8  ad5940.o [2]
+  .rodata                 const         0x5f3c          4     0x8  main.o [1]
+  .rodata                 const         0x5f44          4     0x4  ad5940.o [2]
+  .rodata                 const         0x5f48          4     0x4  ad5940.o [2]
+  .rodata                 const         0x5f4c          4     0x4  ad5940.o [2]
+  .rodata                 const         0x5f50          4     0x4  ad5940.o [2]
+  .text                   ro code       0x5f54          2     0x2  startup_ADuCM355.o [3]
+  .text                   ro code       0x5f56          2     0x2  startup_ADuCM355.o [3]
+  .text                   ro code       0x5f58          2     0x2  startup_ADuCM355.o [3]
+  .text                   ro code       0x5f5a          2     0x2  startup_ADuCM355.o [3]
+  .text                   ro code       0x5f5c          2     0x2  startup_ADuCM355.o [3]
+  .text                   ro code       0x5f5e          2     0x2  startup_ADuCM355.o [3]
+  .text                   ro code       0x5f60          2     0x2  startup_ADuCM355.o [3]
+  .text                   ro code       0x5f62          2     0x2  startup_ADuCM355.o [3]
+  .text                   ro code       0x5f64          2     0x2  startup_ADuCM355.o [3]
+  .text                   ro code       0x5f66          2     0x2  startup_ADuCM355.o [3]
+  .text                   ro code       0x5f68          2     0x2  startup_ADuCM355.o [3]
+  .text                   ro code       0x5f6a          2     0x2  startup_ADuCM355.o [3]
+  .text                   ro code       0x5f6c          2     0x2  startup_ADuCM355.o [3]
+  .text                   ro code       0x5f6e          2     0x2  startup_ADuCM355.o [3]
+  .text                   ro code       0x5f70          2     0x2  startup_ADuCM355.o [3]
+  .text                   ro code       0x5f72          2     0x2  startup_ADuCM355.o [3]
+  .text                   ro code       0x5f74          2     0x2  startup_ADuCM355.o [3]
+  .text                   ro code       0x5f76          2     0x2  startup_ADuCM355.o [3]
+  .text                   ro code       0x5f78          2     0x2  startup_ADuCM355.o [3]
+  .text                   ro code       0x5f7a          2     0x2  startup_ADuCM355.o [3]
+  .text                   ro code       0x5f7c          2     0x2  startup_ADuCM355.o [3]
+  .text                   ro code       0x5f7e          2     0x2  startup_ADuCM355.o [3]
+  .text                   ro code       0x5f80          2     0x2  startup_ADuCM355.o [3]
+  .text                   ro code       0x5f82          2     0x2  startup_ADuCM355.o [3]
+  .text                   ro code       0x5f84          2     0x2  startup_ADuCM355.o [3]
+  .text                   ro code       0x5f86          2     0x2  startup_ADuCM355.o [3]
+  .text                   ro code       0x5f88          2     0x2  startup_ADuCM355.o [3]
+  .text                   ro code       0x5f8a          2     0x2  startup_ADuCM355.o [3]
+  .text                   ro code       0x5f8c          2     0x2  startup_ADuCM355.o [3]
+  .text                   ro code       0x5f8e          2     0x2  startup_ADuCM355.o [3]
+  .text                   ro code       0x5f90          2     0x2  startup_ADuCM355.o [3]
+  .text                   ro code       0x5f92          2     0x2  startup_ADuCM355.o [3]
+  .text                   ro code       0x5f94          2     0x2  startup_ADuCM355.o [3]
+  .text                   ro code       0x5f96          2     0x2  startup_ADuCM355.o [3]
+  .text                   ro code       0x5f98          2     0x2  startup_ADuCM355.o [3]
+  .text                   ro code       0x5f9a          2     0x2  startup_ADuCM355.o [3]
+  .text                   ro code       0x5f9c          2     0x2  startup_ADuCM355.o [3]
+  .text                   ro code       0x5f9e          2     0x2  startup_ADuCM355.o [3]
+  .text                   ro code       0x5fa0          2     0x2  startup_ADuCM355.o [3]
+  .text                   ro code       0x5fa2          2     0x2  startup_ADuCM355.o [3]
+  .text                   ro code       0x5fa4          2     0x2  startup_ADuCM355.o [3]
+  .text                   ro code       0x5fa6          2     0x2  startup_ADuCM355.o [3]
+  .text                   ro code       0x5fa8          2     0x2  startup_ADuCM355.o [3]
+  .text                   ro code       0x5faa          2     0x2  startup_ADuCM355.o [3]
+  .text                   ro code       0x5fac          2     0x2  startup_ADuCM355.o [3]
+  .text                   ro code       0x5fae          2     0x2  startup_ADuCM355.o [3]
+  .rodata                 const         0x5fb0                0x0  zero_init3.o [6]
+  .rodata                 const         0x5fb0                0x0  packbits_init_single.o [6]
+  Initializer bytes       const         0x5fb0               0x56  <for P3-1>
+                                      - 0x6006             0x5806
 
 Absolute sections:                                          0x140
   .noinit                 uninit   0x2000'0000              0x140  startup_ADuCM355.o [3]
@@ -299,7 +300,7 @@ Unused ranges:
 
          From           To      Size
          ----           --      ----
-       0x5f6c     0x1'ffff  0x1'a094
+       0x6006     0x1'ffff  0x1'9ffa
   0x2000'0206  0x2000'0207       0x2
   0x2000'1258  0x2000'1bff     0x9a8
 
@@ -316,7 +317,7 @@ Zero (__iar_zero_init3)
 
 Copy/packbits (__iar_packbits_init_single3)
     1 source range, total size 0x56 (43% of destination):
-               0x5f16    0x56
+               0x5fb0    0x56
     1 destination range, total size 0xc6:
           0x2000'0140    0xc6
 
@@ -334,11 +335,11 @@ command line/config:
     Total:
 
 C:\Users\mandy\aducm355-examples\examples\ApplicationExamples\M355_DPV\iar\Debug\Obj\app_1052054763364153231.dir: [1]
-    AD5940Main.o                568       32    4'104
-    DPV.o                     2'680       81      218
+    AD5940Main.o                584       32    4'104
+    DPV.o                     2'748      153      218
     main.o                      120        8
     ----------------------------------------------------------
-    Total:                    3'368      121    4'322
+    Total:                    3'452      193    4'322
 
 C:\Users\mandy\aducm355-examples\examples\ApplicationExamples\M355_DPV\iar\Debug\Obj\common_14919461937644757070.dir: [2]
     ADuCM355Port.o              200                 4
@@ -418,10 +419,9 @@ shb_l.a: [7]
     ----------------------------------------------------------
     Total:                       20
 
-    Gaps                                   2
     Linker created                        32    1'028
 --------------------------------------------------------------
-    Grand Total:             21'752      972    5'399      320
+    Grand Total:             21'836    1'042    5'399      320
 
 
 *******************************************************************************
@@ -430,11 +430,11 @@ shb_l.a: [7]
 
 Entry                       Address    Size  Type      Object
 -----                       -------    ----  ----      ------
-.iar.init_table$$Base        0x5da0           --   Gb  - Linker created -
-.iar.init_table$$Limit       0x5dc0           --   Gb  - Linker created -
-?main                        0x5c91          Code  Gb  cmain.o [6]
-AD5940PlatformCfg            0x5641    0xd0  Code  Lc  AD5940Main.o [1]
-AD5940RampStructInit         0x5711    0x6c  Code  Gb  AD5940Main.o [1]
+.iar.init_table$$Base        0x5e3c           --   Gb  - Linker created -
+.iar.init_table$$Limit       0x5e5c           --   Gb  - Linker created -
+?main                        0x5ce5          Code  Gb  cmain.o [6]
+AD5940PlatformCfg            0x56ad    0xd0  Code  Lc  AD5940Main.o [1]
+AD5940RampStructInit         0x577d    0x6e  Code  Gb  AD5940Main.o [1]
 AD5940_ADCBaseCfgS           0x15d3    0x1c  Code  Gb  ad5940.o [2]
 AD5940_ADCCode2Volt           0xd8b    0x7a  Code  Gb  ad5940.o [2]
 AD5940_ADCDigCompCfgS        0x1661    0x2e  Code  Gb  ad5940.o [2]
@@ -470,11 +470,11 @@ AD5940_INTCTestFlag          0x1d69    0x24  Code  Gb  ad5940.o [2]
 AD5940_Initialize             0xfbf    0x7c  Code  Gb  ad5940.o [2]
 AD5940_LFOSCMeasure          0x2581   0x1ce  Code  Gb  ad5940.o [2]
 AD5940_LFOSCMeasure::SeqA
-                             0x5eb0     0x4  Data  Lc  ad5940.o [2]
+                             0x5f4c     0x4  Data  Lc  ad5940.o [2]
 AD5940_LFOSCMeasure::SeqB
-                             0x5eb4     0x4  Data  Lc  ad5940.o [2]
+                             0x5f50     0x4  Data  Lc  ad5940.o [2]
 AD5940_LFOSCMeasure::SeqBB
-                             0x5e98     0x8  Data  Lc  ad5940.o [2]
+                             0x5f34     0x8  Data  Lc  ad5940.o [2]
 AD5940_LPAMPCfgS             0x14d7    0x6c  Code  Gb  ad5940.o [2]
 AD5940_LPDAC0WriteS          0x149b    0x1e  Code  Gb  ad5940.o [2]
 AD5940_LPDAC1WriteS          0x14b9    0x1e  Code  Gb  ad5940.o [2]
@@ -482,7 +482,7 @@ AD5940_LPDACCfgS             0x1421    0x7a  Code  Gb  ad5940.o [2]
 AD5940_LPLoopCfgS            0x140d    0x14  Code  Gb  ad5940.o [2]
 AD5940_LPRtiaCal             0x1ee5   0x688  Code  Gb  ad5940.o [2]
 AD5940_MCUResourceInit       0x3073    0x2e  Code  Gb  ADuCM355Port.o [2]
-AD5940_Main                  0x577d    0x42  Code  Gb  AD5940Main.o [1]
+AD5940_Main                  0x57eb    0x48  Code  Gb  AD5940Main.o [1]
 AD5940_Notch50HzAvailable
                               0x9f9    0xf0  Code  Gb  ad5940.o [2]
 AD5940_Notch60HzAvailable
@@ -522,33 +522,33 @@ AD5940_WUPTCtrl              0x1a7d    0x2a  Code  Gb  ad5940.o [2]
 AD5940_WUPTTime              0x1aa7    0xd6  Code  Gb  ad5940.o [2]
 AD5940_WakeUp                0x1e01    0x2a  Code  Gb  ad5940.o [2]
 AD5940_WriteReg               0xf8b    0x1a  Code  Gb  ad5940.o [2]
-ADC_Int_Handler              0x5ef5     0x2  Code  Wk  startup_ADuCM355.o [3]
-AfeAdc_Int_Handler           0x5ef9     0x2  Code  Wk  startup_ADuCM355.o [3]
-AfeCMDFifo_Int_Handler       0x5efd     0x2  Code  Wk  startup_ADuCM355.o [3]
+ADC_Int_Handler              0x5f8f     0x2  Code  Wk  startup_ADuCM355.o [3]
+AfeAdc_Int_Handler           0x5f93     0x2  Code  Wk  startup_ADuCM355.o [3]
+AfeCMDFifo_Int_Handler       0x5f97     0x2  Code  Wk  startup_ADuCM355.o [3]
 AfeCrcError_Int_Handler
-                             0x5f03     0x2  Code  Wk  startup_ADuCM355.o [3]
+                             0x5f9d     0x2  Code  Wk  startup_ADuCM355.o [3]
 AfeDATAFifo_Int_Handler
-                             0x5eff     0x2  Code  Wk  startup_ADuCM355.o [3]
-AfeError_Int_Handler         0x5ef7     0x2  Code  Wk  startup_ADuCM355.o [3]
-AfeGeneral_Int_Handler       0x5efb     0x2  Code  Wk  startup_ADuCM355.o [3]
+                             0x5f99     0x2  Code  Wk  startup_ADuCM355.o [3]
+AfeError_Int_Handler         0x5f91     0x2  Code  Wk  startup_ADuCM355.o [3]
+AfeGeneral_Int_Handler       0x5f95     0x2  Code  Wk  startup_ADuCM355.o [3]
 AfeGpTimer0_Int_Handler
-                             0x5f05     0x2  Code  Wk  startup_ADuCM355.o [3]
+                             0x5f9f     0x2  Code  Wk  startup_ADuCM355.o [3]
 AfeGpTimer1_Int_Handler
-                             0x5f07     0x2  Code  Wk  startup_ADuCM355.o [3]
+                             0x5fa1     0x2  Code  Wk  startup_ADuCM355.o [3]
 AfeSysClkSpeed          0x2000'0144     0x4  Data  Lc  ClkLib.o [2]
-AfeWdt_Int_Handler           0x5f01     0x2  Code  Wk  startup_ADuCM355.o [3]
+AfeWdt_Int_Handler           0x5f9b     0x2  Code  Wk  startup_ADuCM355.o [3]
 Afe_Int3_Handler             0x30a1    0x10  Code  Gb  ADuCM355Port.o [2]
 AppBuff                 0x2000'0208  0x1000  Data  Gb  AD5940Main.o [1]
 AppSWVCfg               0x2000'014c    0xb8  Data  Lc  DPV.o [1]
-AppSWVCtrl                   0x4bd1   0x104  Code  Gb  DPV.o [1]
-AppSWVDataProcess            0x5437    0x6a  Code  Lc  DPV.o [1]
-AppSWVGetCfg                 0x4bbd    0x14  Code  Gb  DPV.o [1]
-AppSWVISR                    0x54a1    0xae  Code  Gb  DPV.o [1]
-AppSWVInit                   0x52c1   0x15c  Code  Gb  DPV.o [1]
-AppSWVRegModify              0x541d    0x1a  Code  Lc  DPV.o [1]
-AppSWVRtiaCal                0x523f    0x82  Code  Lc  DPV.o [1]
-AppSWVSeqADCCtrlGen          0x4e63    0xda  Code  Lc  DPV.o [1]
-AppSWVSeqDACCtrlGen          0x4f3d   0x302  Code  Lc  DPV.o [1]
+AppSWVCtrl                   0x4bdf   0x138  Code  Gb  DPV.o [1]
+AppSWVDataProcess            0x5479    0x6a  Code  Lc  DPV.o [1]
+AppSWVGetCfg                 0x4bcb    0x14  Code  Gb  DPV.o [1]
+AppSWVISR                    0x54e3    0xae  Code  Gb  DPV.o [1]
+AppSWVInit                   0x5303   0x15c  Code  Gb  DPV.o [1]
+AppSWVRegModify              0x545f    0x1a  Code  Lc  DPV.o [1]
+AppSWVRtiaCal                0x5281    0x82  Code  Lc  DPV.o [1]
+AppSWVSeqADCCtrlGen          0x4ea5    0xda  Code  Lc  DPV.o [1]
+AppSWVSeqDACCtrlGen          0x4f7f   0x302  Code  Lc  DPV.o [1]
 AppSWVSeqDACCtrlGen::DACSeqBlk0Addr
                         0x2000'123c     0x4  Data  Lc  DPV.o [1]
 AppSWVSeqDACCtrlGen::DACSeqBlk1Addr
@@ -561,110 +561,110 @@ AppSWVSeqDACCtrlGen::WritesRemaining
                         0x2000'1244     0x4  Data  Lc  DPV.o [1]
 AppSWVSeqDACCtrlGen::bCmdForSeq0
                         0x2000'0205     0x1  Data  Lc  DPV.o [1]
-AppSWVSeqInitGen             0x4cd5   0x18e  Code  Lc  DPV.o [1]
+AppSWVSeqInitGen             0x4d17   0x18e  Code  Lc  DPV.o [1]
 Battery_Voltage_Int_Handler
-                             0x5eb9     0x2  Code  Wk  startup_ADuCM355.o [3]
+                             0x5d47     0x2  Code  Wk  startup_ADuCM355.o [3]
 BusFault_Handler             0x34ff     0x2  Code  Wk  startup_ADuCM355.o [3]
 CHECKSUM$$Base                0x7fc           --   Gb  - Linker created -
 CHECKSUM$$Limit               0x800           --   Gb  - Linker created -
 CSTACK$$Base            0x2000'1c00           --   Gb  - Linker created -
 CSTACK$$Limit           0x2000'2000           --   Gb  - Linker created -
-ClkDivCfg                    0x59b5    0x38  Code  Gb  ClkLib.o [2]
-ClockInit                    0x5a9f    0x12  Code  Gb  main.o [1]
+ClkDivCfg                    0x5a09    0x38  Code  Gb  ClkLib.o [2]
+ClockInit                    0x5af3    0x12  Code  Gb  main.o [1]
 CrcOfReadKey                  0x190     0x4  Data  Gb  startup_ADuCM355.o [3]
-Crypto_Int_Handler           0x5eeb     0x2  Code  Wk  startup_ADuCM355.o [3]
+Crypto_Int_Handler           0x5f85     0x2  Code  Wk  startup_ADuCM355.o [3]
 CurrBaseCode            0x2000'1230     0x4  Data  Gb  DPV.o [1]
 CurrVzeroCode           0x2000'1238     0x4  Data  Lc  DPV.o [1]
-D2DClkSpeedCheck             0x5a35    0x1c  Code  Gb  ClkLib.o [2]
-DMA_ADC0_Int_Handler         0x5eed     0x2  Code  Wk  startup_ADuCM355.o [3]
+D2DClkSpeedCheck             0x5a89    0x1c  Code  Gb  ClkLib.o [2]
+DMA_ADC0_Int_Handler         0x5f87     0x2  Code  Wk  startup_ADuCM355.o [3]
 DMA_AES0_IN_Int_Handler
-                             0x5ee5     0x2  Code  Wk  startup_ADuCM355.o [3]
+                             0x5f7f     0x2  Code  Wk  startup_ADuCM355.o [3]
 DMA_AES0_OUT_Int_Handler
-                             0x5ee7     0x2  Code  Wk  startup_ADuCM355.o [3]
+                             0x5f81     0x2  Code  Wk  startup_ADuCM355.o [3]
 DMA_AfeCMDFifo_Int_Handler
-                             0x5f09     0x2  Code  Wk  startup_ADuCM355.o [3]
+                             0x5fa3     0x2  Code  Wk  startup_ADuCM355.o [3]
 DMA_AfeDATAFifo_Int_Handler
-                             0x5f0b     0x2  Code  Wk  startup_ADuCM355.o [3]
-DMA_Err_Int_Handler          0x5ed1     0x2  Code  Wk  startup_ADuCM355.o [3]
-DMA_FLASH0_Int_Handler       0x5ee9     0x2  Code  Wk  startup_ADuCM355.o [3]
+                             0x5fa5     0x2  Code  Wk  startup_ADuCM355.o [3]
+DMA_Err_Int_Handler          0x5f6b     0x2  Code  Wk  startup_ADuCM355.o [3]
+DMA_FLASH0_Int_Handler       0x5f83     0x2  Code  Wk  startup_ADuCM355.o [3]
 DMA_I2C0_MX_Int_Handler
-                             0x5ee3     0x2  Code  Wk  startup_ADuCM355.o [3]
+                             0x5f7d     0x2  Code  Wk  startup_ADuCM355.o [3]
 DMA_I2C0_SRX_Int_Handler
-                             0x5ee1     0x2  Code  Wk  startup_ADuCM355.o [3]
+                             0x5f7b     0x2  Code  Wk  startup_ADuCM355.o [3]
 DMA_I2C0_STX_Int_Handler
-                             0x5edf     0x2  Code  Wk  startup_ADuCM355.o [3]
-DMA_SIP4_Int_Handler         0x5f0d     0x2  Code  Wk  startup_ADuCM355.o [3]
-DMA_SIP5_Int_Handler         0x5f0f     0x2  Code  Wk  startup_ADuCM355.o [3]
-DMA_SIP6_Int_Handler         0x5f11     0x2  Code  Wk  startup_ADuCM355.o [3]
-DMA_SIP7_Int_Handler         0x5f13     0x2  Code  Wk  startup_ADuCM355.o [3]
+                             0x5f79     0x2  Code  Wk  startup_ADuCM355.o [3]
+DMA_SIP4_Int_Handler         0x5fa7     0x2  Code  Wk  startup_ADuCM355.o [3]
+DMA_SIP5_Int_Handler         0x5fa9     0x2  Code  Wk  startup_ADuCM355.o [3]
+DMA_SIP6_Int_Handler         0x5fab     0x2  Code  Wk  startup_ADuCM355.o [3]
+DMA_SIP7_Int_Handler         0x5fad     0x2  Code  Wk  startup_ADuCM355.o [3]
 DMA_SPI0_RX_Int_Handler
-                             0x5ed9     0x2  Code  Wk  startup_ADuCM355.o [3]
+                             0x5f73     0x2  Code  Wk  startup_ADuCM355.o [3]
 DMA_SPI0_TX_Int_Handler
-                             0x5ed7     0x2  Code  Wk  startup_ADuCM355.o [3]
+                             0x5f71     0x2  Code  Wk  startup_ADuCM355.o [3]
 DMA_SPI1_RX_Int_Handler
-                             0x5ed5     0x2  Code  Wk  startup_ADuCM355.o [3]
+                             0x5f6f     0x2  Code  Wk  startup_ADuCM355.o [3]
 DMA_SPI1_TX_Int_Handler
-                             0x5ed3     0x2  Code  Wk  startup_ADuCM355.o [3]
+                             0x5f6d     0x2  Code  Wk  startup_ADuCM355.o [3]
 DMA_UART_RX_Int_Handler
-                             0x5edd     0x2  Code  Wk  startup_ADuCM355.o [3]
+                             0x5f77     0x2  Code  Wk  startup_ADuCM355.o [3]
 DMA_UART_TX_Int_Handler
-                             0x5edb     0x2  Code  Wk  startup_ADuCM355.o [3]
+                             0x5f75     0x2  Code  Wk  startup_ADuCM355.o [3]
 DebugMon_Handler             0x477b     0x2  Code  Wk  startup_ADuCM355.o [3]
-DigClkSel                    0x5961    0x54  Code  Gb  ClkLib.o [2]
+DigClkSel                    0x59b5    0x54  Code  Gb  ClkLib.o [2]
 DigRootClkSpeed         0x2000'0140     0x4  Data  Lc  ClkLib.o [2]
 DioCfgPin                    0x3729    0x32  Code  Gb  DioLib.o [2]
 DioIenPin                    0x375b    0x12  Code  Gb  DioLib.o [2]
 EiCfg                        0x3775    0x6a  Code  Gb  IntLib.o [2]
 EiClr                        0x376d     0x8  Code  Gb  IntLib.o [2]
 Ext_Int0_Handler             0x4b1b     0x2  Code  Wk  startup_ADuCM355.o [3]
-Ext_Int1_Handler             0x55cf     0x2  Code  Wk  startup_ADuCM355.o [3]
-Ext_Int2_Handler             0x595f     0x2  Code  Wk  startup_ADuCM355.o [3]
-Flash0_Int_Handler           0x5ec5     0x2  Code  Wk  startup_ADuCM355.o [3]
-GPIO_A_Int_Handler           0x5ebd     0x2  Code  Wk  startup_ADuCM355.o [3]
-GPIO_B_Int_Handler           0x5ebf     0x2  Code  Wk  startup_ADuCM355.o [3]
-GP_Tmr0_Int_Handler          0x5ec1     0x2  Code  Wk  startup_ADuCM355.o [3]
-GP_Tmr1_Int_Handler          0x5ec3     0x2  Code  Wk  startup_ADuCM355.o [3]
-GP_Tmr2_Int_Handler          0x5eef     0x2  Code  Wk  startup_ADuCM355.o [3]
+Ext_Int1_Handler             0x5613     0x2  Code  Wk  startup_ADuCM355.o [3]
+Ext_Int2_Handler             0x59b3     0x2  Code  Wk  startup_ADuCM355.o [3]
+Flash0_Int_Handler           0x5f5f     0x2  Code  Wk  startup_ADuCM355.o [3]
+GPIO_A_Int_Handler           0x5f57     0x2  Code  Wk  startup_ADuCM355.o [3]
+GPIO_B_Int_Handler           0x5f59     0x2  Code  Wk  startup_ADuCM355.o [3]
+GP_Tmr0_Int_Handler          0x5f5b     0x2  Code  Wk  startup_ADuCM355.o [3]
+GP_Tmr1_Int_Handler          0x5f5d     0x2  Code  Wk  startup_ADuCM355.o [3]
+GP_Tmr2_Int_Handler          0x5f89     0x2  Code  Wk  startup_ADuCM355.o [3]
 HardFault_Handler            0x2fff     0x2  Code  Wk  startup_ADuCM355.o [3]
 I2C0_Master_Int_Handler
-                             0x5ecf     0x2  Code  Wk  startup_ADuCM355.o [3]
-I2C0_Slave_Int_Handler       0x5ecd     0x2  Code  Wk  startup_ADuCM355.o [3]
+                             0x5f69     0x2  Code  Wk  startup_ADuCM355.o [3]
+I2C0_Slave_Int_Handler       0x5f67     0x2  Code  Wk  startup_ADuCM355.o [3]
 LFOSCFreq               0x2000'1224     0x4  Data  Gb  AD5940Main.o [1]
 MemManage_Handler            0x329b     0x2  Code  Wk  startup_ADuCM355.o [3]
 NmiSR                        0x2fa3     0x2  Code  Wk  startup_ADuCM355.o [3]
 NumOfCRCPages                 0x194     0x4  Data  Gb  startup_ADuCM355.o [3]
-PLL_Int_Handler              0x5ef1     0x2  Code  Wk  startup_ADuCM355.o [3]
+PLL_Int_Handler              0x5f8b     0x2  Code  Wk  startup_ADuCM355.o [3]
 PendSV_Handler               0x47f3     0x2  Code  Wk  startup_ADuCM355.o [3]
 PulseCode               0x2000'1234     0x4  Data  Gb  DPV.o [1]
-RESERVED_VECTOR              0x5f15     0x2  Code  Wk  startup_ADuCM355.o [3]
-RNG_Int_Handler              0x5ef3     0x2  Code  Wk  startup_ADuCM355.o [3]
-RTC0_Int_Handler             0x5ebb     0x2  Code  Wk  startup_ADuCM355.o [3]
+RESERVED_VECTOR              0x5faf     0x2  Code  Wk  startup_ADuCM355.o [3]
+RNG_Int_Handler              0x5f8d     0x2  Code  Wk  startup_ADuCM355.o [3]
+RTC0_Int_Handler             0x5f55     0x2  Code  Wk  startup_ADuCM355.o [3]
 RTC1_Int_Handler             0x4b17     0x2  Code  Wk  startup_ADuCM355.o [3]
-RampShowResult               0x55d1    0x70  Code  Lc  AD5940Main.o [1]
+RampShowResult               0x563d    0x70  Code  Lc  AD5940Main.o [1]
 RampShowResult::index   0x2000'1228     0x4  Data  Lc  AD5940Main.o [1]
 ReadProKeyHsh                 0x180    0x10  Data  Gb  startup_ADuCM355.o [3]
-Region$$Table$$Base          0x5da0           --   Gb  - Linker created -
-Region$$Table$$Limit         0x5dc0           --   Gb  - Linker created -
-ResetISR                     0x5c31    0x60  Code  Wk  startup_ADuCM355.o [3]
-SPI0_Int_Handler             0x5ec9     0x2  Code  Wk  startup_ADuCM355.o [3]
-SPI1_Int_Handler             0x5ecb     0x2  Code  Wk  startup_ADuCM355.o [3]
+Region$$Table$$Base          0x5e3c           --   Gb  - Linker created -
+Region$$Table$$Limit         0x5e5c           --   Gb  - Linker created -
+ResetISR                     0x5c85    0x60  Code  Wk  startup_ADuCM355.o [3]
+SPI0_Int_Handler             0x5f63     0x2  Code  Wk  startup_ADuCM355.o [3]
+SPI1_Int_Handler             0x5f65     0x2  Code  Wk  startup_ADuCM355.o [3]
 SVC_Handler                  0x4763     0x2  Code  Wk  startup_ADuCM355.o [3]
 SeqGenDB                0x2000'1208    0x1c  Data  Gb  ad5940.o [2]
 SysTick_Handler              0x48df     0x2  Code  Wk  startup_ADuCM355.o [3]
-UART_Int_Handler             0x5ec7     0x2  Code  Wk  startup_ADuCM355.o [3]
-UartInit                     0x5ab1    0x32  Code  Gb  main.o [1]
-UpdateDACCodes               0x4b31    0x8c  Code  Lc  DPV.o [1]
-UrtCfg                       0x5831    0xe8  Code  Gb  UrtLib.o [2]
-UrtFifoCfg                   0x5931     0xc  Code  Gb  UrtLib.o [2]
-UrtFifoClr                   0x593d    0x12  Code  Gb  UrtLib.o [2]
-UrtTx                        0x594f    0x10  Code  Gb  UrtLib.o [2]
+UART_Int_Handler             0x5f61     0x2  Code  Wk  startup_ADuCM355.o [3]
+UartInit                     0x5b05    0x32  Code  Gb  main.o [1]
+UpdateDACCodes               0x4b31    0x9a  Code  Lc  DPV.o [1]
+UrtCfg                       0x5885    0xe8  Code  Gb  UrtLib.o [2]
+UrtFifoCfg                   0x5985     0xc  Code  Gb  UrtLib.o [2]
+UrtFifoClr                   0x5991    0x12  Code  Gb  UrtLib.o [2]
+UrtTx                        0x59a3    0x10  Code  Gb  UrtLib.o [2]
 UsageFault_Handler           0x3a47     0x2  Code  Wk  startup_ADuCM355.o [3]
-Vreg_over_Int_Handler        0x5cb7     0x2  Code  Wk  startup_ADuCM355.o [3]
-WDog_Tmr_Int_Handler         0x5c2f     0x2  Code  Wk  startup_ADuCM355.o [3]
+Vreg_over_Int_Handler        0x5d0b     0x2  Code  Wk  startup_ADuCM355.o [3]
+WDog_Tmr_Int_Handler         0x5c83     0x2  Code  Wk  startup_ADuCM355.o [3]
 _LC                          0x3a49     0x6  Code  Lc  xprintflarge_nomb.o [4]
 _LitobLargeNoMb              0x4559   0x114  Code  Lc  xprintflarge_nomb.o [4]
 _PrintfLargeNoMb             0x3a4f   0xb04  Code  Gb  xprintflarge_nomb.o [4]
-_Prout                       0x5dff    0x16  Code  Gb  xprout.o [4]
+_Prout                       0x5e9b    0x16  Code  Gb  xprout.o [4]
 _PutcharsLargeNoMb           0x46c9    0x2e  Code  Lc  xprintflarge_nomb.o [4]
 __AD5940_ReferenceON         0x1e2b    0x5a  Code  Lc  ad5940.o [2]
 __AD5940_SetDExRTIA          0x11f5    0x58  Code  Lc  ad5940.o [2]
@@ -681,7 +681,7 @@ __aeabi_ddiv                 0x32b9          Code  Gb  DblDiv.o [5]
 __aeabi_dmul                 0x30f1          Code  Gb  DblMul.o [5]
 __aeabi_dsub                 0x3965          Code  Gb  DblAddSub.o [5]
 __aeabi_f2d                  0x2c49          Code  Gb  FltToDbl.o [5]
-__aeabi_f2iz                 0x55a9          Code  Gb  FltToS32.o [5]
+__aeabi_f2iz                 0x55ed          Code  Gb  FltToS32.o [5]
 __aeabi_f2uiz                0x291d          Code  Gb  FltToU32.o [5]
 __aeabi_fadd                 0x2935          Code  Gb  FltAddSub.o [5]
 __aeabi_fdiv                 0x2b31          Code  Gb  FltDiv.o [5]
@@ -695,7 +695,7 @@ __aeabi_memset               0x2aa5          Code  Gb  ABImemset.o [6]
 __aeabi_ui2d                 0x329d          Code  Gb  U32ToDbl.o [5]
 __aeabi_ui2f                 0x2829          Code  Gb  U32ToFlt.o [5]
 __aeabi_uldivmod             0x48e1          Code  Gb  I64DivMod.o [6]
-__cmain                      0x5c91          Code  Gb  cmain.o [6]
+__cmain                      0x5ce5          Code  Gb  cmain.o [6]
 __exit                       0x4b1d    0x14  Code  Gb  exit.o [7]
 __iar_Atan64                 0x3529   0x200  Code  Gb  iar_Atan64.o [5]
 __iar_Fail_s                 0x477d    0x1c  Code  Gb  xfail_s.o [4]
@@ -704,47 +704,47 @@ __iar_Memset                 0x2aa5          Code  Gb  ABImemset.o [6]
 __iar_Memset_word            0x2aad          Code  Gb  ABImemset.o [6]
 __iar_Strchr                 0x4765          Code  Gb  strchr.o [6]
 __iar_atan2_64               0x2ded   0x16e  Code  Gb  atan2_64.o [5]
-__iar_data_init3             0x5cb9    0x28  Code  Gb  data_init.o [6]
+__iar_data_init3             0x5d0d    0x28  Code  Gb  data_init.o [6]
 __iar_frexp                  0x4859          Code  Gb  frexp.o [5]
 __iar_frexp64                0x484d          Code  Gb  frexp.o [5]
 __iar_frexpl                 0x4859          Code  Gb  frexp.o [5]
 __iar_packbits_init_single3
                              0x27ef    0x3a  Code  Gb  packbits_init_single.o [6]
-__iar_program_start          0x5de1          Code  Gb  cstartup_M.o [6]
+__iar_program_start          0x5e7d          Code  Gb  cstartup_M.o [6]
 __iar_sqrt64                 0x2c91          Code  Gb  sqrt.o [5]
 __iar_unaligned_memcpy       0x2779          Code  Gb  ABImemcpy_unaligned.o [6]
 __iar_unaligned_memcpy4
                              0x2799          Code  Gb  ABImemcpy_unaligned.o [6]
 __iar_unaligned_memcpy8
                              0x2799          Code  Gb  ABImemcpy_unaligned.o [6]
-__iar_zero_init3             0x5d69    0x38  Code  Gb  zero_init3.o [6]
-__low_level_init             0x5cb3     0x4  Code  Gb  low_level_init.o [4]
+__iar_zero_init3             0x5dd1    0x38  Code  Gb  zero_init3.o [6]
+__low_level_init             0x5d07     0x4  Code  Gb  low_level_init.o [4]
 __relocated_vector_table
                         0x2000'0000   0x140  Data  Wk  startup_ADuCM355.o [3]
 __vector_table                  0x0   0x140  Data  Gb  startup_ADuCM355.o [3]
-_call_main                   0x5c9d          Code  Gb  cmain.o [6]
-_exit                        0x5ce5          Code  Gb  cexit.o [6]
-_exit_2                      0x5ce9          Code  Gb  cexit_2.o [6]
+_call_main                   0x5cf1          Code  Gb  cmain.o [6]
+_exit                        0x5d39          Code  Gb  cexit.o [6]
+_exit_2                      0x5d3d          Code  Gb  cexit_2.o [6]
 _is_value_in_table            0x9d3    0x26  Code  Lc  ad5940.o [2]
-a                            0x5d28    0x40  Data  Lc  iar_Atan64.o [5]
+a                            0x5d90    0x40  Data  Lc  iar_Atan64.o [5]
 abort                        0x4b11     0x6  Code  Gb  abort.o [4]
-adi_default_setting          0x5c2d     0x2  Code  Gb  system_ADuCM355.o [3]
-adi_system_EnableISRAM       0x5bcd    0x1e  Code  Gb  system_ADuCM355.o [3]
+adi_default_setting          0x5c81     0x2  Code  Gb  system_ADuCM355.o [3]
+adi_system_EnableISRAM       0x5c21    0x1e  Code  Gb  system_ADuCM355.o [3]
 adi_system_EnableRetention
-                             0x5beb    0x32  Code  Gb  system_ADuCM355.o [3]
+                             0x5c3f    0x32  Code  Gb  system_ADuCM355.o [3]
 atan2                        0x2ded   0x16e  Code  Gb  atan2_64.o [5]
 atan2l                       0x2ded   0x16e  Code  Gb  atan2_64.o [5]
 bFirstDACSeq            0x2000'0204     0x1  Data  Lc  DPV.o [1]
 bIsS2silicon            0x2000'1254     0x1  Data  Lc  ad5940.o [2]
 clk10UsDelay            0x2000'0148     0x4  Data  Lc  ClkLib.o [2]
-clockUpdate                  0x59ed    0x48  Code  Gb  ClkLib.o [2]
-exit                         0x5ce1     0x4  Code  Gb  exit.o [4]
+clockUpdate                  0x5a41    0x48  Code  Gb  ClkLib.o [2]
+exit                         0x5d35     0x4  Code  Gb  exit.o [4]
 frexp                        0x484d          Code  Gb  frexp.o [5]
 frexpl                       0x484d          Code  Gb  frexp.o [5]
-main                         0x5a79    0x26  Code  Gb  main.o [1]
+main                         0x5acd    0x26  Code  Gb  main.o [1]
 memchr                       0x47f5          Code  Gb  memchr.o [6]
-printf                       0x5809    0x28  Code  Gb  printf.o [4]
-putchar                      0x5dc1    0x20  Code  Gb  retarget.o [3]
+printf                       0x5615    0x28  Code  Gb  printf.o [4]
+putchar                      0x5e5d    0x20  Code  Gb  retarget.o [3]
 scale                        0x466d    0x46  Code  Lc  xprintflarge_nomb.o [4]
 sec_hand                0x2000'1250     0x4  Data  Lc  xfail_s.o [4]
 sqrt                         0x2c91          Code  Gb  sqrt.o [5]
@@ -762,8 +762,8 @@ ucInterrupted           0x2000'122c     0x4  Data  Lc  ADuCM355Port.o [2]
 [6] = rt7M_tl.a
 [7] = shb_l.a
 
-  21'752 bytes of readonly  code memory
-     972 bytes of readonly  data memory
+  21'836 bytes of readonly  code memory
+   1'042 bytes of readonly  data memory
    5'399 bytes of readwrite data memory (+ 320 absolute)
 
 Errors: none

@@ -10,10 +10,12 @@ Analog Devices Software License Agreement.
 #include "DPV.h"
 
 /**
-   User could configure following parameters
+
 **/
 
 #define APPBUFF_SIZE 1024
+//#define NUM_DPV_CYCLES 5
+#define INTER_CYCLE_DELAY  5000      /* ms between scans */
 uint32_t AppBuff[APPBUFF_SIZE];
 float LFOSCFreq;    /* Measured LFOSC frequency */
 
@@ -24,6 +26,19 @@ float LFOSCFreq;    /* Measured LFOSC frequency */
  * @param DataCount: The available data count in buffer pData.
  * @return return 0.
 */
+
+/*
+static int32_t RampShowResult(float *pData, uint32_t DataCount)
+{
+  static uint32_t idx = 0;
+  for(uint32_t i = 0; i < DataCount; i++)
+  {
+    const char *phase = (idx % 2 == 0) ? "BASE" : "PULSE";
+    printf("%lu %s %.6e\r\n", (unsigned long)idx, phase, pData[i]);
+    idx++;
+  }
+  return 0;
+}*/
 
 static int32_t RampShowResult(float *pData, uint32_t DataCount)
 {
@@ -45,6 +60,10 @@ static int32_t RampShowResult(float *pData, uint32_t DataCount)
   }
   return 0;
 }
+
+
+
+
 
 
 /**
@@ -126,13 +145,15 @@ void AD5940RampStructInit(void)
   pRampCfg->StepNumber        = 200;         /* (800 - (-200)) / 5 */
   pRampCfg->StepHeight_mV     = 5.0f;        /* E step = 5 mV */
   pRampCfg->PulseAmplitude_mV = 25.0f;       /* E pulse = 25 mV */
-  pRampCfg->PulseWidth_ms     = 50.0f;       /* T pulse = 50 ms */
-  pRampCfg->QuietTime_ms      = 50.0f;       /* 100ms - 50ms for 0.05V/s scan */
+  pRampCfg->PulseWidth_ms     = 20.0f;       /* T pulse = 20 ms */
+  pRampCfg->QuietTime_ms      = 80.0f;       /* 100ms - 20ms for 0.05V/s scan */
 
   /* ADC */
-  pRampCfg->SampleDelay  = 45.0f;            /* 50-5 sample near end of pulse */
-  pRampCfg->LPTIARtiaSel = LPTIARTIA_85K; //can change for current
+  pRampCfg->SampleDelay  = 18.0f;            /* 20-2, sample 2ms before end of pulse */
+  pRampCfg->LPTIARtiaSel = LPTIARTIA_256K;   /* ±3.5 µA full scale */
 }
+
+
 
 //change Estep: step number 1000/x, stepheight=x, quiet time: 
 
@@ -143,8 +164,15 @@ void AD5940_Main(void)
   AD5940PlatformCfg();
   AD5940RampStructInit();
 
-  AppSWVInit(AppBuff, APPBUFF_SIZE);    /* Initialize RAMP application. Provide a buffer, which is used to store sequencer commands */
-  AppSWVCtrl(APPCTRL_START, 0);          /* Control IMP measurment to start. Second parameter has no meaning with this command. */
+  AppSWVInit(AppBuff, APPBUFF_SIZE);    // Initialize RAMP application. Provide a buffer, which is used to store sequencer commands 
+  // RTIA calibration check 
+  //AppSWVCfg_Type *pCfg; 
+  //AppSWVGetCfg(&pCfg); 
+  //printf("RcalVal=%.0f ohm, RTIA calibrated=%.0f ohm\r\n", pCfg->RcalVal, pCfg->RtiaValue.Magnitude); 
+
+//eq time
+  AD5940_Delay10us(500000);
+  AppSWVCtrl(APPCTRL_START, 0);          // Control IMP measurment to start. Second parameter has no meaning with this command. 
 
   while(1)
   {
@@ -157,5 +185,68 @@ void AD5940_Main(void)
     }
 
   }
+  
+}
+/*
+
+
+
+void AD5940_Main(void)
+{
+  uint32_t temp;
+  uint32_t cycleNum = 0;
+  uint32_t samplesThisScan = 0;
+  int scanReady = 1;
+
+  AD5940PlatformCfg();
+  AD5940RampStructInit();
+
+  AppSWVCfg_Type *pCfg;
+  AppSWVGetCfg(&pCfg);
+
+  AppSWVInit(AppBuff, APPBUFF_SIZE);
+
+  while(1)
+  {
+    if(cycleNum < NUM_DPV_CYCLES && scanReady)
+    {
+      scanReady = 0;
+      samplesThisScan = 0;
+      printf("\r\n===== DPV Cycle %lu =====\r\n", (unsigned long)(cycleNum + 1));
+      printf("voltage_V, current_uA\r\n");
+
+      if(cycleNum > 0)
+        AppSWVInit(AppBuff, APPBUFF_SIZE);
+
+      AppSWVCtrl(APPCTRL_START, 0);
+    }
+
+    if(AD5940_GetMCUIntFlag())
+    {
+      AD5940_ClrMCUIntFlag();
+      temp = APPBUFF_SIZE;
+      AppSWVISR(AppBuff, &temp);
+
+      if(temp != 0)
+      {
+        RampShowResult((float*)AppBuff, temp);
+        samplesThisScan += temp;
+
+        if(samplesThisScan >= pCfg->StepNumber)
+        {
+       
+          AD5940_Delay10us(INTER_CYCLE_DELAY * 100UL); 
+          cycleNum++;
+          scanReady = 1;
+        }
+      }
+    }
+
+    if(cycleNum >= NUM_DPV_CYCLES)
+    {
+  
+    }
+  }
 }
 
+*/
