@@ -142,11 +142,14 @@ void AD5940RampStructInit(void)
   pRampCfg->RampStartVolt     = -200.0f;     /* E begin = -0.2 V */
   pRampCfg->RampPeakVolt      = +800.0f;     /* E end   = +0.8 V */
   pRampCfg->VzeroStart        = 1300.0f;
-  pRampCfg->StepNumber        = 200;         /* (800 - (-200)) / 5 */
-  pRampCfg->StepHeight_mV     = 5.0f;        /* E step = 5 mV */
+  pRampCfg->StepNumber        = 80;         /* (800 - (-200)) / 5 */
+  pRampCfg->StepHeight_mV     = 12.5f;        /* E step = 5 mV */
   pRampCfg->PulseAmplitude_mV = 25.0f;       /* E pulse = 25 mV */
   pRampCfg->PulseWidth_ms     = 20.0f;       /* T pulse = 20 ms */
-  pRampCfg->QuietTime_ms      = 80.0f;       /* 100ms - 20ms for 0.05V/s scan */
+  pRampCfg->QuietTime_ms      = 230.0f;       /* 100ms - 20ms for 0.05V/s scan */
+  //for 5mV, estep 5, step number 200, quiettime 80
+  //for 10mV, estep 10, step number 100, quiettime 180
+  //for 15mV, estep 15, step number 67, quiettime 280
 
   /* ADC */
   pRampCfg->SampleDelay  = 18.0f;            /* 20-2, sample 2ms before end of pulse */
